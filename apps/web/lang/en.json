@@ -13,23 +13,31 @@
     "displayDetails": {
       "detail1": {
         "title": "Step Out in Style",
+        "alt": "Step Out in Style - Sunglasses collection for a fashionable look",
         "subtitle": "Be inspired",
         "description": "Step out in style with our sunglasses collection",
         "buttonText": "Discover now"
       },
       "detail2": {
         "title": "Pack it Up",
+        "alt": "Pack it Up - Explore the outdoors with our backpack collection",
         "subtitle": "Be active",
         "description": "Explore the great outdoors with our backpacks",
         "buttonText": "Discover now"
       },
       "detail3": {
         "title": "Fresh and Bold",
+        "alt": "Fresh and Bold - Add a pop of color to your outfit",
         "subtitle": "New collection",
         "description": "Add a pop of color to your outfit",
         "buttonText": "Discover now"
       }
-    }
+    },
+    "womenHomepageCategory": "Women Category on Homepage",
+    "menHomepageCategory": "Men Category on Homepage",
+    "kidHomepageCategory": "Kid Category on Homepage",
+    "background": "New Wireless Pro headphones with sleek design and modern features",
+    "headPhones": "New Wireless Pro headphones with spatial audio and all-day battery"
   },
   "billing": {
     "heading": "Billing Address",
@@ -170,6 +178,7 @@
   "emptyCartImgAlt": "Image of an empty cart",
   "backToShopping": "Back To Shopping",
   "allFromCategory": "All {name}",
+  "passwordVisibilty": "Password visibility",
   "listSettings": "List settings",
   "closeListSettings": "Close list settings",
   "clearFilters": "Clear all filters",
@@ -219,6 +228,7 @@
   "billingAddressRequired": "Please select a billing address.",
   "shippingAddressRequired": "Please select a shipping address.",
   "savedShippingAddress": "Saved shipping adresses",
+  "address": "Addresses",
   "savedBillingAddress": "Saved billing adresses",
   "pickSavedAddress": "Pick saved address",
   "pickSavedAddressSubtitle": "Select one of your saved addresses or create a new one",
@@ -267,7 +277,10 @@
   "deletedFromCart": "Item removed from shopping cart",
   "search": "Search",
   "openSearchModalButtonLabel": "Open item search",
-  "vsfHomepage": "VSF Homepage",
+  "closeMenu": "Close Menu",
+  "closeDialog": "Close Dialog",
+  "openConfigurationDrawer": "Open configuration drawer",
+  "goToHomepage": "Go to Homepage",
   "home": "Home",
   "products": "Products",
   "cart": "Cart",
@@ -473,6 +486,7 @@
       "noAddresses": "You don't have any addresses yet"
     },
     "ordersAndReturns": {
+      "actions": "Actions",
       "heading": "Orders & Returns",
       "orderId": "Order ID",
       "returnId": "Return-ID",
@@ -536,7 +550,9 @@
         "priceDown": "Price decreased",
         "notAvailable": "Currently unavailable",
         "buyAgain": "Buy again",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "orderPropertyNotAvailableOrChanged": "Item properties changed or are no longer available",
+        "stockLimitation": "only {stock} item(s) available"
       }
     },
     "wishlist": {
@@ -611,7 +627,10 @@
     "subTotal": "Subtotal",
     "shipping": "Shipping",
     "vat": "VAT",
-    "total": "Total"
+    "total": "Total",
+    "saveOrderToAccount": "Save this order to your account",
+    "createAccountForBenefits": "Create an account to enjoy all benefits!",
+    "signUp": "Sign up!"
   },
   "lowestPrice": "Lowest price of the last 30 days: {price}",
   "asterisk": "*",

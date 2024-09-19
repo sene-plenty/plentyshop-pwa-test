@@ -2,9 +2,47 @@
 
 ## v1.6.0
 
+### TODO 📙 Migrationsanleitung
+
+- Vue-Komponenten nutzen jetzt andere Farbgewichtungen (s. Bereich **Hinzugefügt** für Details). Deshalb musst du deine Farbpaletten wie folgt aktualisieren:
+  - `900` -> `700`
+  - `800` -> `600`
+  - `700` -> `500`
+  - `600` -> `400`
+  - `500` -> `300`
+  - `400` -> `200`
+  - `300` -> `100`
+  - `200` -> `50`
+  - `100` -> `50`
+- Ersetze alle Vorkommen von `SfButton` mit `UiButton`.
+- Aktualisiere den Namen der Umgebungsvariablen `NEWSLETTER_FORM_SHOW_NAMES` zu `NEWSLETTERFORMNAMES`.
+
+### 🚀 Hinzugefügt
+
+- Metadaten wie Meta-Beschreibung und -Schlüsselwörter werden jetzt aus den Umgebungsvariablen gelesen.
+- Daten für das Open Graph-Protokoll werden jetzt aus Umgebungsvariablen gelesen. Dabei handelt es sich um den Titel, das Bild, und den Endpunkt.
+- Die zu nutzenden Google Fonts werden jetzt aus den Umgebungsvariablen gelesen.
+- Die Anzeige des Formulars zur Newsletteranmeldung ist jetzt abhängig von den Umgebungsvariablen.
+- Es ist jetzt möglich, eine vollständige Tailwind-Farbpalette von einer einzigen Hauptfarbe zu generieren. Um diese Funktionalität zu nutzen, musst du im Hook `build:before` die Methode `generateScssVariables` aktivieren und die beiden Umgebungsvariablen `PRIMARY` und `SECONDARY` hinterlegen. Diese Variablen stellen jeweils die mittlere Farbe der Palette dar, also die Gewichtung `500`. Im Zusammenhang mit diesem Update wurden alle Vorkommen von `SfButton` mit der neuen Komponente `UiButton` ersetzt. `UiButton` ist in der Funktionalität identisch zu `SfButton`, allerdings wurden einige Gewichtungen an die generierten Paletten angepasst. Eine Prüfung mit ESLint markiert `SfButton` jetzt als `error`. Du kannst diese Regel in der Datei `apps/web/eslintrc.cjs` abschalten.
+- Das Favicon kann jetzt vom plentysystems-System geladen werden.
+- Das Logo kann jetzt vom plentysystems-System geladen werden.
+- Die "Erneut kaufen"-Funktionalität unterstützt Artikeleigenschaften.
+- PayPal-Button für PS Lazyload
+
+### Geändert
+
+- Die Konfigurationsdateien für App-, Cookie-, Internationalisierungs- und Tailwind-Einstellungen befinden sich jetzt im Ordner `apps/web/configuration`.
+- Url der Bestellbestätigungsseite von `.../thank-you?[...]` zu `.../confirmation/orderId/accessKey` geändert.
+- Name der Umgebungsvariable von Cloudflare Turnstile Sitekey angepasst, um Kompatibilität mit der Systemkonfiguration herzustellen.
+
 ### 🩹 Behoben
 
 - Ein Fehler beim REST-Aufruf zur Abfrage der Systemkonfiguration wurde behoben.
+- Die Schaltflächen bei den Adressen in der Kasse wurden in der mobilen Ansicht angepasst.
+- Problem behoben, bei dem die Navigationsleiste zwischen 640px und 767px verschwunden ist.
+- In der automatisch generierten Dokumentation von Composables enthält die Seitennavigation jetzt die richtigen Verlinkungen.
+- Problem behoben, dass beim Abfragen der Konfiguration von plentysystems, Updates erst beim zweiten Durchlauf des Build-Prozesses angewandt wurden.
+- Kleinere Stylingfehler in der Kreditkarten-Form im Checkout und der Bewertungs-Form auf der Produktseite behoben.
 
 ## v1.5.0 (2024-07-19) <a href="https://github.com/plentymarkets/plentyshop-pwa/compare/v1.4.1...v1.5.0" target="_blank" rel="noopener"><b>Übersicht aller Änderungen</b></a>
 
@@ -123,6 +161,7 @@
 - Demo-Bilder haben jetzt verschiedene Größen, basierend auf dem Ansichtsfenster.
 - Das Design der Sitemap wurde angepasst.
 - Es wird jetzt gekennzeichnet, ob ein Eingabefeld optional oder ein Pflichtfeld ist.
+- Struktur der useProduct Composable
 
 ## v1.4.0 (2024-04-15) <a href="https://github.com/plentymarkets/plentyshop-pwa/compare/v1.3.0...v1.4.0" target="_blank" rel="noopener"><b>Übersicht aller Änderungen</b></a>
 
